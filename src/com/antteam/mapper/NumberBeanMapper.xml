@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.antteam.mapper.NumberBeanMapper" >
+  <resultMap id="BaseResultMap" type="com.antteam.bean.NumberBean" >
+    <id column="order_id" property="order_id" jdbcType="BIGINT" />
+    <result column="user_name" property="user_name" jdbcType="VARCHAR" />
+    <result column="create_time" property="create_time" jdbcType="DATE" />
+    <result column="total" property="total" jdbcType="INTEGER" />
+    <result column="one" property="one" jdbcType="INTEGER" />
+    <result column="two" property="two" jdbcType="INTEGER" />
+    <result column="tree" property="tree" jdbcType="INTEGER" />
+    <result column="four" property="four" jdbcType="INTEGER" />
+    <result column="five" property="five" jdbcType="INTEGER" />
+    <result column="six" property="six" jdbcType="INTEGER" />
+    <result column="seven" property="seven" jdbcType="INTEGER" />
+    <result column="eight" property="eight" jdbcType="INTEGER" />
+    <result column="nine" property="nine" jdbcType="INTEGER" />
+    <result column="ten" property="ten" jdbcType="INTEGER" />
+    <result column="eleven" property="eleven" jdbcType="INTEGER" />
+    <result column="twelve" property="twelve" jdbcType="INTEGER" />
+    <result column="thirteen" property="thirteen" jdbcType="INTEGER" />
+    <result column="fourteen" property="fourteen" jdbcType="INTEGER" />
+    <result column="fifteen" property="fifteen" jdbcType="INTEGER" />
+    <result column="sixteen" property="sixteen" jdbcType="INTEGER" />
+    <result column="seventeen" property="seventeen" jdbcType="INTEGER" />
+    <result column="eighteen" property="eighteen" jdbcType="INTEGER" />
+    <result column="nineteen" property="nineteen" jdbcType="INTEGER" />
+    <result column="twenty" property="twenty" jdbcType="INTEGER" />
+    <result column="twenty_one" property="twenty_one" jdbcType="INTEGER" />
+    <result column="twenty_two" property="twenty_two" jdbcType="INTEGER" />
+    <result column="twenty_three" property="twenty_three" jdbcType="INTEGER" />
+    <result column="twenty_four" property="twenty_four" jdbcType="INTEGER" />
+    <result column="twenty_five" property="twenty_five" jdbcType="INTEGER" />
+    <result column="twenty_six" property="twenty_six" jdbcType="INTEGER" />
+    <result column="twenty_seven" property="twenty_seven" jdbcType="INTEGER" />
+    <result column="twenty_eight" property="twenty_eight" jdbcType="INTEGER" />
+    <result column="twenty_nine" property="twenty_nine" jdbcType="INTEGER" />
+    <result column="thirty" property="thirty" jdbcType="INTEGER" />
+    <result column="thirty_one" property="thirty_one" jdbcType="INTEGER" />
+    <result column="thirty_two" property="thirty_two" jdbcType="INTEGER" />
+    <result column="thirty_three" property="thirty_three" jdbcType="INTEGER" />
+    <result column="thirty_four" property="thirty_four" jdbcType="INTEGER" />
+    <result column="thirty_five" property="thirty_five" jdbcType="INTEGER" />
+    <result column="thirty_six" property="thirty_six" jdbcType="INTEGER" />
+    <result column="thirty_seven" property="thirty_seven" jdbcType="INTEGER" />
+    <result column="thirty_eight" property="thirty_eight" jdbcType="INTEGER" />
+    <result column="thirty_nine" property="thirty_nine" jdbcType="INTEGER" />
+    <result column="forty" property="forty" jdbcType="INTEGER" />
+    <result column="forty_one" property="forty_one" jdbcType="INTEGER" />
+    <result column="forty_two" property="forty_two" jdbcType="INTEGER" />
+    <result column="forty_three" property="forty_three" jdbcType="INTEGER" />
+    <result column="forty_four" property="forty_four" jdbcType="INTEGER" />
+    <result column="forty_five" property="forty_five" jdbcType="INTEGER" />
+    <result column="forty_six" property="forty_six" jdbcType="INTEGER" />
+    <result column="forty_seven" property="forty_seven" jdbcType="INTEGER" />
+    <result column="forty_eight" property="forty_eight" jdbcType="INTEGER" />
+    <result column="forty_nine" property="forty_nine" jdbcType="INTEGER" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    order_id, user_name, create_time, total, one, two, tree, four, five, six, seven, 
+    eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen, 
+    eighteen, nineteen, twenty, twenty_one, twenty_two, twenty_three, twenty_four, twenty_five, 
+    twenty_six, twenty_seven, twenty_eight, twenty_nine, thirty, thirty_one, thirty_two, 
+    thirty_three, thirty_four, thirty_five, thirty_six, thirty_seven, thirty_eight, thirty_nine, 
+    forty, forty_one, forty_two, forty_three, forty_four, forty_five, forty_six, forty_seven, 
+    forty_eight, forty_nine
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    from number
+    where order_id = #{order_id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from number
+    where order_id = #{order_id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.antteam.bean.NumberBean" >
+    insert into number (order_id, user_name, create_time, 
+      total, one, two, tree, 
+      four, five, six, seven, 
+      eight, nine, ten, eleven, 
+      twelve, thirteen, fourteen, 
+      fifteen, sixteen, seventeen, 
+      eighteen, nineteen, twenty, 
+      twenty_one, twenty_two, twenty_three, 
+      twenty_four, twenty_five, twenty_six, 
+      twenty_seven, twenty_eight, twenty_nine, 
+      thirty, thirty_one, thirty_two, 
+      thirty_three, thirty_four, thirty_five, 
+      thirty_six, thirty_seven, thirty_eight, 
+      thirty_nine, forty, forty_one, 
+      forty_two, forty_three, forty_four, 
+      forty_five, forty_six, forty_seven, 
+      forty_eight, forty_nine)
+    values (#{order_id,jdbcType=BIGINT}, #{user_name,jdbcType=VARCHAR}, #{create_time,jdbcType=DATE}, 
+      #{total,jdbcType=INTEGER}, #{one,jdbcType=INTEGER}, #{two,jdbcType=INTEGER}, #{tree,jdbcType=INTEGER}, 
+      #{four,jdbcType=INTEGER}, #{five,jdbcType=INTEGER}, #{six,jdbcType=INTEGER}, #{seven,jdbcType=INTEGER}, 
+      #{eight,jdbcType=INTEGER}, #{nine,jdbcType=INTEGER}, #{ten,jdbcType=INTEGER}, #{eleven,jdbcType=INTEGER}, 
+      #{twelve,jdbcType=INTEGER}, #{thirteen,jdbcType=INTEGER}, #{fourteen,jdbcType=INTEGER}, 
+      #{fifteen,jdbcType=INTEGER}, #{sixteen,jdbcType=INTEGER}, #{seventeen,jdbcType=INTEGER}, 
+      #{eighteen,jdbcType=INTEGER}, #{nineteen,jdbcType=INTEGER}, #{twenty,jdbcType=INTEGER}, 
+      #{twenty_one,jdbcType=INTEGER}, #{twenty_two,jdbcType=INTEGER}, #{twenty_three,jdbcType=INTEGER}, 
+      #{twenty_four,jdbcType=INTEGER}, #{twenty_five,jdbcType=INTEGER}, #{twenty_six,jdbcType=INTEGER}, 
+      #{twenty_seven,jdbcType=INTEGER}, #{twenty_eight,jdbcType=INTEGER}, #{twenty_nine,jdbcType=INTEGER}, 
+      #{thirty,jdbcType=INTEGER}, #{thirty_one,jdbcType=INTEGER}, #{thirty_two,jdbcType=INTEGER}, 
+      #{thirty_three,jdbcType=INTEGER}, #{thirty_four,jdbcType=INTEGER}, #{thirty_five,jdbcType=INTEGER}, 
+      #{thirty_six,jdbcType=INTEGER}, #{thirty_seven,jdbcType=INTEGER}, #{thirty_eight,jdbcType=INTEGER}, 
+      #{thirty_nine,jdbcType=INTEGER}, #{forty,jdbcType=INTEGER}, #{forty_one,jdbcType=INTEGER}, 
+      #{forty_two,jdbcType=INTEGER}, #{forty_three,jdbcType=INTEGER}, #{forty_four,jdbcType=INTEGER}, 
+      #{forty_five,jdbcType=INTEGER}, #{forty_six,jdbcType=INTEGER}, #{forty_seven,jdbcType=INTEGER}, 
+      #{forty_eight,jdbcType=INTEGER}, #{forty_nine,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="com.antteam.bean.NumberBean" >
+    insert into number
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="order_id != null" >
+        order_id,
+      </if>
+      <if test="user_name != null" >
+        user_name,
+      </if>
+      <if test="create_time != null" >
+        create_time,
+      </if>
+      <if test="total != null" >
+        total,
+      </if>
+      <if test="one != null" >
+        one,
+      </if>
+      <if test="two != null" >
+        two,
+      </if>
+      <if test="tree != null" >
+        tree,
+      </if>
+      <if test="four != null" >
+        four,
+      </if>
+      <if test="five != null" >
+        five,
+      </if>
+      <if test="six != null" >
+        six,
+      </if>
+      <if test="seven != null" >
+        seven,
+      </if>
+      <if test="eight != null" >
+        eight,
+      </if>
+      <if test="nine != null" >
+        nine,
+      </if>
+      <if test="ten != null" >
+        ten,
+      </if>
+      <if test="eleven != null" >
+        eleven,
+      </if>
+      <if test="twelve != null" >
+        twelve,
+      </if>
+      <if test="thirteen != null" >
+        thirteen,
+      </if>
+      <if test="fourteen != null" >
+        fourteen,
+      </if>
+      <if test="fifteen != null" >
+        fifteen,
+      </if>
+      <if test="sixteen != null" >
+        sixteen,
+      </if>
+      <if test="seventeen != null" >
+        seventeen,
+      </if>
+      <if test="eighteen != null" >
+        eighteen,
+      </if>
+      <if test="nineteen != null" >
+        nineteen,
+      </if>
+      <if test="twenty != null" >
+        twenty,
+      </if>
+      <if test="twenty_one != null" >
+        twenty_one,
+      </if>
+      <if test="twenty_two != null" >
+        twenty_two,
+      </if>
+      <if test="twenty_three != null" >
+        twenty_three,
+      </if>
+      <if test="twenty_four != null" >
+        twenty_four,
+      </if>
+      <if test="twenty_five != null" >
+        twenty_five,
+      </if>
+      <if test="twenty_six != null" >
+        twenty_six,
+      </if>
+      <if test="twenty_seven != null" >
+        twenty_seven,
+      </if>
+      <if test="twenty_eight != null" >
+        twenty_eight,
+      </if>
+      <if test="twenty_nine != null" >
+        twenty_nine,
+      </if>
+      <if test="thirty != null" >
+        thirty,
+      </if>
+      <if test="thirty_one != null" >
+        thirty_one,
+      </if>
+      <if test="thirty_two != null" >
+        thirty_two,
+      </if>
+      <if test="thirty_three != null" >
+        thirty_three,
+      </if>
+      <if test="thirty_four != null" >
+        thirty_four,
+      </if>
+      <if test="thirty_five != null" >
+        thirty_five,
+      </if>
+      <if test="thirty_six != null" >
+        thirty_six,
+      </if>
+      <if test="thirty_seven != null" >
+        thirty_seven,
+      </if>
+      <if test="thirty_eight != null" >
+        thirty_eight,
+      </if>
+      <if test="thirty_nine != null" >
+        thirty_nine,
+      </if>
+      <if test="forty != null" >
+        forty,
+      </if>
+      <if test="forty_one != null" >
+        forty_one,
+      </if>
+      <if test="forty_two != null" >
+        forty_two,
+      </if>
+      <if test="forty_three != null" >
+        forty_three,
+      </if>
+      <if test="forty_four != null" >
+        forty_four,
+      </if>
+      <if test="forty_five != null" >
+        forty_five,
+      </if>
+      <if test="forty_six != null" >
+        forty_six,
+      </if>
+      <if test="forty_seven != null" >
+        forty_seven,
+      </if>
+      <if test="forty_eight != null" >
+        forty_eight,
+      </if>
+      <if test="forty_nine != null" >
+        forty_nine,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="order_id != null" >
+        #{order_id,jdbcType=BIGINT},
+      </if>
+      <if test="user_name != null" >
+        #{user_name,jdbcType=VARCHAR},
+      </if>
+      <if test="create_time != null" >
+        #{create_time,jdbcType=DATE},
+      </if>
+      <if test="total != null" >
+        #{total,jdbcType=INTEGER},
+      </if>
+      <if test="one != null" >
+        #{one,jdbcType=INTEGER},
+      </if>
+      <if test="two != null" >
+        #{two,jdbcType=INTEGER},
+      </if>
+      <if test="tree != null" >
+        #{tree,jdbcType=INTEGER},
+      </if>
+      <if test="four != null" >
+        #{four,jdbcType=INTEGER},
+      </if>
+      <if test="five != null" >
+        #{five,jdbcType=INTEGER},
+      </if>
+      <if test="six != null" >
+        #{six,jdbcType=INTEGER},
+      </if>
+      <if test="seven != null" >
+        #{seven,jdbcType=INTEGER},
+      </if>
+      <if test="eight != null" >
+        #{eight,jdbcType=INTEGER},
+      </if>
+      <if test="nine != null" >
+        #{nine,jdbcType=INTEGER},
+      </if>
+      <if test="ten != null" >
+        #{ten,jdbcType=INTEGER},
+      </if>
+      <if test="eleven != null" >
+        #{eleven,jdbcType=INTEGER},
+      </if>
+      <if test="twelve != null" >
+        #{twelve,jdbcType=INTEGER},
+      </if>
+      <if test="thirteen != null" >
+        #{thirteen,jdbcType=INTEGER},
+      </if>
+      <if test="fourteen != null" >
+        #{fourteen,jdbcType=INTEGER},
+      </if>
+      <if test="fifteen != null" >
+        #{fifteen,jdbcType=INTEGER},
+      </if>
+      <if test="sixteen != null" >
+        #{sixteen,jdbcType=INTEGER},
+      </if>
+      <if test="seventeen != null" >
+        #{seventeen,jdbcType=INTEGER},
+      </if>
+      <if test="eighteen != null" >
+        #{eighteen,jdbcType=INTEGER},
+      </if>
+      <if test="nineteen != null" >
+        #{nineteen,jdbcType=INTEGER},
+      </if>
+      <if test="twenty != null" >
+        #{twenty,jdbcType=INTEGER},
+      </if>
+      <if test="twenty_one != null" >
+        #{twenty_one,jdbcType=INTEGER},
+      </if>
+      <if test="twenty_two != null" >
+        #{twenty_two,jdbcType=INTEGER},
+      </if>
+      <if test="twenty_three != null" >
+        #{twenty_three,jdbcType=INTEGER},
+      </if>
+      <if test="twenty_four != null" >
+        #{twenty_four,jdbcType=INTEGER},
+      </if>
+      <if test="twenty_five != null" >
+        #{twenty_five,jdbcType=INTEGER},
+      </if>
+      <if test="twenty_six != null" >
+        #{twenty_six,jdbcType=INTEGER},
+      </if>
+      <if test="twenty_seven != null" >
+        #{twenty_seven,jdbcType=INTEGER},
+      </if>
+      <if test="twenty_eight != null" >
+        #{twenty_eight,jdbcType=INTEGER},
+      </if>
+      <if test="twenty_nine != null" >
+        #{twenty_nine,jdbcType=INTEGER},
+      </if>
+      <if test="thirty != null" >
+        #{thirty,jdbcType=INTEGER},
+      </if>
+      <if test="thirty_one != null" >
+        #{thirty_one,jdbcType=INTEGER},
+      </if>
+      <if test="thirty_two != null" >
+        #{thirty_two,jdbcType=INTEGER},
+      </if>
+      <if test="thirty_three != null" >
+        #{thirty_three,jdbcType=INTEGER},
+      </if>
+      <if test="thirty_four != null" >
+        #{thirty_four,jdbcType=INTEGER},
+      </if>
+      <if test="thirty_five != null" >
+        #{thirty_five,jdbcType=INTEGER},
+      </if>
+      <if test="thirty_six != null" >
+        #{thirty_six,jdbcType=INTEGER},
+      </if>
+      <if test="thirty_seven != null" >
+        #{thirty_seven,jdbcType=INTEGER},
+      </if>
+      <if test="thirty_eight != null" >
+        #{thirty_eight,jdbcType=INTEGER},
+      </if>
+      <if test="thirty_nine != null" >
+        #{thirty_nine,jdbcType=INTEGER},
+      </if>
+      <if test="forty != null" >
+        #{forty,jdbcType=INTEGER},
+      </if>
+      <if test="forty_one != null" >
+        #{forty_one,jdbcType=INTEGER},
+      </if>
+      <if test="forty_two != null" >
+        #{forty_two,jdbcType=INTEGER},
+      </if>
+      <if test="forty_three != null" >
+        #{forty_three,jdbcType=INTEGER},
+      </if>
+      <if test="forty_four != null" >
+        #{forty_four,jdbcType=INTEGER},
+      </if>
+      <if test="forty_five != null" >
+        #{forty_five,jdbcType=INTEGER},
+      </if>
+      <if test="forty_six != null" >
+        #{forty_six,jdbcType=INTEGER},
+      </if>
+      <if test="forty_seven != null" >
+        #{forty_seven,jdbcType=INTEGER},
+      </if>
+      <if test="forty_eight != null" >
+        #{forty_eight,jdbcType=INTEGER},
+      </if>
+      <if test="forty_nine != null" >
+        #{forty_nine,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.antteam.bean.NumberBean" >
+    update number
+    <set >
+      <if test="user_name != null" >
+        user_name = #{user_name,jdbcType=VARCHAR},
+      </if>
+      <if test="create_time != null" >
+        create_time = #{create_time,jdbcType=DATE},
+      </if>
+      <if test="total != null" >
+        total = #{total,jdbcType=INTEGER},
+      </if>
+      <if test="one != null" >
+        one = #{one,jdbcType=INTEGER},
+      </if>
+      <if test="two != null" >
+        two = #{two,jdbcType=INTEGER},
+      </if>
+      <if test="tree != null" >
+        tree = #{tree,jdbcType=INTEGER},
+      </if>
+      <if test="four != null" >
+        four = #{four,jdbcType=INTEGER},
+      </if>
+      <if test="five != null" >
+        five = #{five,jdbcType=INTEGER},
+      </if>
+      <if test="six != null" >
+        six = #{six,jdbcType=INTEGER},
+      </if>
+      <if test="seven != null" >
+        seven = #{seven,jdbcType=INTEGER},
+      </if>
+      <if test="eight != null" >
+        eight = #{eight,jdbcType=INTEGER},
+      </if>
+      <if test="nine != null" >
+        nine = #{nine,jdbcType=INTEGER},
+      </if>
+      <if test="ten != null" >
+        ten = #{ten,jdbcType=INTEGER},
+      </if>
+      <if test="eleven != null" >
+        eleven = #{eleven,jdbcType=INTEGER},
+      </if>
+      <if test="twelve != null" >
+        twelve = #{twelve,jdbcType=INTEGER},
+      </if>
+      <if test="thirteen != null" >
+        thirteen = #{thirteen,jdbcType=INTEGER},
+      </if>
+      <if test="fourteen != null" >
+        fourteen = #{fourteen,jdbcType=INTEGER},
+      </if>
+      <if test="fifteen != null" >
+        fifteen = #{fifteen,jdbcType=INTEGER},
+      </if>
+      <if test="sixteen != null" >
+        sixteen = #{sixteen,jdbcType=INTEGER},
+      </if>
+      <if test="seventeen != null" >
+        seventeen = #{seventeen,jdbcType=INTEGER},
+      </if>
+      <if test="eighteen != null" >
+        eighteen = #{eighteen,jdbcType=INTEGER},
+      </if>
+      <if test="nineteen != null" >
+        nineteen = #{nineteen,jdbcType=INTEGER},
+      </if>
+      <if test="twenty != null" >
+        twenty = #{twenty,jdbcType=INTEGER},
+      </if>
+      <if test="twenty_one != null" >
+        twenty_one = #{twenty_one,jdbcType=INTEGER},
+      </if>
+      <if test="twenty_two != null" >
+        twenty_two = #{twenty_two,jdbcType=INTEGER},
+      </if>
+      <if test="twenty_three != null" >
+        twenty_three = #{twenty_three,jdbcType=INTEGER},
+      </if>
+      <if test="twenty_four != null" >
+        twenty_four = #{twenty_four,jdbcType=INTEGER},
+      </if>
+      <if test="twenty_five != null" >
+        twenty_five = #{twenty_five,jdbcType=INTEGER},
+      </if>
+      <if test="twenty_six != null" >
+        twenty_six = #{twenty_six,jdbcType=INTEGER},
+      </if>
+      <if test="twenty_seven != null" >
+        twenty_seven = #{twenty_seven,jdbcType=INTEGER},
+      </if>
+      <if test="twenty_eight != null" >
+        twenty_eight = #{twenty_eight,jdbcType=INTEGER},
+      </if>
+      <if test="twenty_nine != null" >
+        twenty_nine = #{twenty_nine,jdbcType=INTEGER},
+      </if>
+      <if test="thirty != null" >
+        thirty = #{thirty,jdbcType=INTEGER},
+      </if>
+      <if test="thirty_one != null" >
+        thirty_one = #{thirty_one,jdbcType=INTEGER},
+      </if>
+      <if test="thirty_two != null" >
+        thirty_two = #{thirty_two,jdbcType=INTEGER},
+      </if>
+      <if test="thirty_three != null" >
+        thirty_three = #{thirty_three,jdbcType=INTEGER},
+      </if>
+      <if test="thirty_four != null" >
+        thirty_four = #{thirty_four,jdbcType=INTEGER},
+      </if>
+      <if test="thirty_five != null" >
+        thirty_five = #{thirty_five,jdbcType=INTEGER},
+      </if>
+      <if test="thirty_six != null" >
+        thirty_six = #{thirty_six,jdbcType=INTEGER},
+      </if>
+      <if test="thirty_seven != null" >
+        thirty_seven = #{thirty_seven,jdbcType=INTEGER},
+      </if>
+      <if test="thirty_eight != null" >
+        thirty_eight = #{thirty_eight,jdbcType=INTEGER},
+      </if>
+      <if test="thirty_nine != null" >
+        thirty_nine = #{thirty_nine,jdbcType=INTEGER},
+      </if>
+      <if test="forty != null" >
+        forty = #{forty,jdbcType=INTEGER},
+      </if>
+      <if test="forty_one != null" >
+        forty_one = #{forty_one,jdbcType=INTEGER},
+      </if>
+      <if test="forty_two != null" >
+        forty_two = #{forty_two,jdbcType=INTEGER},
+      </if>
+      <if test="forty_three != null" >
+        forty_three = #{forty_three,jdbcType=INTEGER},
+      </if>
+      <if test="forty_four != null" >
+        forty_four = #{forty_four,jdbcType=INTEGER},
+      </if>
+      <if test="forty_five != null" >
+        forty_five = #{forty_five,jdbcType=INTEGER},
+      </if>
+      <if test="forty_six != null" >
+        forty_six = #{forty_six,jdbcType=INTEGER},
+      </if>
+      <if test="forty_seven != null" >
+        forty_seven = #{forty_seven,jdbcType=INTEGER},
+      </if>
+      <if test="forty_eight != null" >
+        forty_eight = #{forty_eight,jdbcType=INTEGER},
+      </if>
+      <if test="forty_nine != null" >
+        forty_nine = #{forty_nine,jdbcType=INTEGER},
+      </if>
+    </set>
+    where order_id = #{order_id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.antteam.bean.NumberBean" >
+    update number
+    set user_name = #{user_name,jdbcType=VARCHAR},
+      create_time = #{create_time,jdbcType=DATE},
+      total = #{total,jdbcType=INTEGER},
+      one = #{one,jdbcType=INTEGER},
+      two = #{two,jdbcType=INTEGER},
+      tree = #{tree,jdbcType=INTEGER},
+      four = #{four,jdbcType=INTEGER},
+      five = #{five,jdbcType=INTEGER},
+      six = #{six,jdbcType=INTEGER},
+      seven = #{seven,jdbcType=INTEGER},
+      eight = #{eight,jdbcType=INTEGER},
+      nine = #{nine,jdbcType=INTEGER},
+      ten = #{ten,jdbcType=INTEGER},
+      eleven = #{eleven,jdbcType=INTEGER},
+      twelve = #{twelve,jdbcType=INTEGER},
+      thirteen = #{thirteen,jdbcType=INTEGER},
+      fourteen = #{fourteen,jdbcType=INTEGER},
+      fifteen = #{fifteen,jdbcType=INTEGER},
+      sixteen = #{sixteen,jdbcType=INTEGER},
+      seventeen = #{seventeen,jdbcType=INTEGER},
+      eighteen = #{eighteen,jdbcType=INTEGER},
+      nineteen = #{nineteen,jdbcType=INTEGER},
+      twenty = #{twenty,jdbcType=INTEGER},
+      twenty_one = #{twenty_one,jdbcType=INTEGER},
+      twenty_two = #{twenty_two,jdbcType=INTEGER},
+      twenty_three = #{twenty_three,jdbcType=INTEGER},
+      twenty_four = #{twenty_four,jdbcType=INTEGER},
+      twenty_five = #{twenty_five,jdbcType=INTEGER},
+      twenty_six = #{twenty_six,jdbcType=INTEGER},
+      twenty_seven = #{twenty_seven,jdbcType=INTEGER},
+      twenty_eight = #{twenty_eight,jdbcType=INTEGER},
+      twenty_nine = #{twenty_nine,jdbcType=INTEGER},
+      thirty = #{thirty,jdbcType=INTEGER},
+      thirty_one = #{thirty_one,jdbcType=INTEGER},
+      thirty_two = #{thirty_two,jdbcType=INTEGER},
+      thirty_three = #{thirty_three,jdbcType=INTEGER},
+      thirty_four = #{thirty_four,jdbcType=INTEGER},
+      thirty_five = #{thirty_five,jdbcType=INTEGER},
+      thirty_six = #{thirty_six,jdbcType=INTEGER},
+      thirty_seven = #{thirty_seven,jdbcType=INTEGER},
+      thirty_eight = #{thirty_eight,jdbcType=INTEGER},
+      thirty_nine = #{thirty_nine,jdbcType=INTEGER},
+      forty = #{forty,jdbcType=INTEGER},
+      forty_one = #{forty_one,jdbcType=INTEGER},
+      forty_two = #{forty_two,jdbcType=INTEGER},
+      forty_three = #{forty_three,jdbcType=INTEGER},
+      forty_four = #{forty_four,jdbcType=INTEGER},
+      forty_five = #{forty_five,jdbcType=INTEGER},
+      forty_six = #{forty_six,jdbcType=INTEGER},
+      forty_seven = #{forty_seven,jdbcType=INTEGER},
+      forty_eight = #{forty_eight,jdbcType=INTEGER},
+      forty_nine = #{forty_nine,jdbcType=INTEGER}
+    where order_id = #{order_id,jdbcType=BIGINT}
+  </update>
+</mapper>

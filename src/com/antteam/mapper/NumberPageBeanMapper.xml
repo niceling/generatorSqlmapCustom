@@ -1,0 +1,1301 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.antteam.mapper.NumberPageBeanMapper" >
+  <resultMap id="BaseResultMap" type="com.antteam.bean.NumberPageBean" >
+    <id column="order_id" property="order_id" jdbcType="BIGINT" />
+    <result column="create_time" property="create_time" jdbcType="DATE" />
+    <result column="total" property="total" jdbcType="INTEGER" />
+    <result column="one_sum" property="one_sum" jdbcType="INTEGER" />
+    <result column="two_sum" property="two_sum" jdbcType="INTEGER" />
+    <result column="three_sum" property="three_sum" jdbcType="INTEGER" />
+    <result column="four_sum" property="four_sum" jdbcType="INTEGER" />
+    <result column="five_sum" property="five_sum" jdbcType="INTEGER" />
+    <result column="six_sum" property="six_sum" jdbcType="INTEGER" />
+    <result column="seven_sum" property="seven_sum" jdbcType="INTEGER" />
+    <result column="eight_sum" property="eight_sum" jdbcType="INTEGER" />
+    <result column="nine_sum" property="nine_sum" jdbcType="INTEGER" />
+    <result column="ten_sum" property="ten_sum" jdbcType="INTEGER" />
+    <result column="eleven_sum" property="eleven_sum" jdbcType="INTEGER" />
+    <result column="twelve_sum" property="twelve_sum" jdbcType="INTEGER" />
+    <result column="thirteen_sum" property="thirteen_sum" jdbcType="INTEGER" />
+    <result column="fourtee_sum" property="fourtee_sum" jdbcType="INTEGER" />
+    <result column="fifteen_sum" property="fifteen_sum" jdbcType="INTEGER" />
+    <result column="sixteen_sum" property="sixteen_sum" jdbcType="INTEGER" />
+    <result column="seventeen_sum" property="seventeen_sum" jdbcType="INTEGER" />
+    <result column="eighteen_sum" property="eighteen_sum" jdbcType="INTEGER" />
+    <result column="nineteen_sum" property="nineteen_sum" jdbcType="INTEGER" />
+    <result column="tweenty_sum" property="tweenty_sum" jdbcType="INTEGER" />
+    <result column="tweenty_one_sum" property="tweenty_one_sum" jdbcType="INTEGER" />
+    <result column="twenty_two_sum" property="twenty_two_sum" jdbcType="INTEGER" />
+    <result column="twenty_three_sum" property="twenty_three_sum" jdbcType="INTEGER" />
+    <result column="twenty_four_sum" property="twenty_four_sum" jdbcType="INTEGER" />
+    <result column="twenty_five_sum" property="twenty_five_sum" jdbcType="INTEGER" />
+    <result column="twenty_six_sum" property="twenty_six_sum" jdbcType="INTEGER" />
+    <result column="twenty_seven_sum" property="twenty_seven_sum" jdbcType="INTEGER" />
+    <result column="twenty_eight_sum" property="twenty_eight_sum" jdbcType="INTEGER" />
+    <result column="twenty_nine_sum" property="twenty_nine_sum" jdbcType="INTEGER" />
+    <result column="thirty_sum" property="thirty_sum" jdbcType="INTEGER" />
+    <result column="thirty_one_sum" property="thirty_one_sum" jdbcType="INTEGER" />
+    <result column="thirty_two_sum" property="thirty_two_sum" jdbcType="INTEGER" />
+    <result column="thirty_three_sum" property="thirty_three_sum" jdbcType="INTEGER" />
+    <result column="thirty_four_sum" property="thirty_four_sum" jdbcType="INTEGER" />
+    <result column="thirty_five_sum" property="thirty_five_sum" jdbcType="INTEGER" />
+    <result column="thirty_six_sum" property="thirty_six_sum" jdbcType="INTEGER" />
+    <result column="thirty_seven_sum" property="thirty_seven_sum" jdbcType="INTEGER" />
+    <result column="thirty_eight_sum" property="thirty_eight_sum" jdbcType="INTEGER" />
+    <result column="thirty_nine_sum" property="thirty_nine_sum" jdbcType="INTEGER" />
+    <result column="forty_sum" property="forty_sum" jdbcType="INTEGER" />
+    <result column="forty_one_sum" property="forty_one_sum" jdbcType="INTEGER" />
+    <result column="forty_two_sum" property="forty_two_sum" jdbcType="INTEGER" />
+    <result column="forty_three_sum" property="forty_three_sum" jdbcType="INTEGER" />
+    <result column="forty_four_sum" property="forty_four_sum" jdbcType="INTEGER" />
+    <result column="forty_five_sum" property="forty_five_sum" jdbcType="INTEGER" />
+    <result column="forty_six_sum" property="forty_six_sum" jdbcType="INTEGER" />
+    <result column="forty_seven_sum" property="forty_seven_sum" jdbcType="INTEGER" />
+    <result column="forty_eight_sum" property="forty_eight_sum" jdbcType="INTEGER" />
+    <result column="forty_nine_sum" property="forty_nine_sum" jdbcType="INTEGER" />
+  </resultMap>
+  <resultMap id="ResultMapWithBLOBs" type="com.antteam.bean.NumberPageBeanWithBLOBs" extends="BaseResultMap" >
+    <result column="one_txt" property="one_txt" jdbcType="LONGVARCHAR" />
+    <result column="two_txt" property="two_txt" jdbcType="LONGVARCHAR" />
+    <result column="three_txt" property="three_txt" jdbcType="LONGVARCHAR" />
+    <result column="four_txt" property="four_txt" jdbcType="LONGVARCHAR" />
+    <result column="five_txt" property="five_txt" jdbcType="LONGVARCHAR" />
+    <result column="six_txt" property="six_txt" jdbcType="LONGVARCHAR" />
+    <result column="seven_txt" property="seven_txt" jdbcType="LONGVARCHAR" />
+    <result column="eight_txt" property="eight_txt" jdbcType="LONGVARCHAR" />
+    <result column="nine_txt" property="nine_txt" jdbcType="LONGVARCHAR" />
+    <result column="ten_txt" property="ten_txt" jdbcType="LONGVARCHAR" />
+    <result column="eleven_txt" property="eleven_txt" jdbcType="LONGVARCHAR" />
+    <result column="twelve_txt" property="twelve_txt" jdbcType="LONGVARCHAR" />
+    <result column="thirteen_txt" property="thirteen_txt" jdbcType="LONGVARCHAR" />
+    <result column="fourteen_txt" property="fourteen_txt" jdbcType="LONGVARCHAR" />
+    <result column="fifteen_txt" property="fifteen_txt" jdbcType="LONGVARCHAR" />
+    <result column="sixteen_txt" property="sixteen_txt" jdbcType="LONGVARCHAR" />
+    <result column="seventeen_txt" property="seventeen_txt" jdbcType="LONGVARCHAR" />
+    <result column="eighteen_txt" property="eighteen_txt" jdbcType="LONGVARCHAR" />
+    <result column="nineteen_txt" property="nineteen_txt" jdbcType="LONGVARCHAR" />
+    <result column="twenty_txt" property="twenty_txt" jdbcType="LONGVARCHAR" />
+    <result column="tweenty_one_txt" property="tweenty_one_txt" jdbcType="LONGVARCHAR" />
+    <result column="twenty_two_txt" property="twenty_two_txt" jdbcType="LONGVARCHAR" />
+    <result column="twenty_three_text" property="twenty_three_text" jdbcType="LONGVARCHAR" />
+    <result column="twenty_four_text" property="twenty_four_text" jdbcType="LONGVARCHAR" />
+    <result column="twenty_five_text" property="twenty_five_text" jdbcType="LONGVARCHAR" />
+    <result column="twenty_six_text" property="twenty_six_text" jdbcType="LONGVARCHAR" />
+    <result column="twenty_seven_text" property="twenty_seven_text" jdbcType="LONGVARCHAR" />
+    <result column="twenty_eight_text" property="twenty_eight_text" jdbcType="LONGVARCHAR" />
+    <result column="twenty_nine_text" property="twenty_nine_text" jdbcType="LONGVARCHAR" />
+    <result column="thirty_text" property="thirty_text" jdbcType="LONGVARCHAR" />
+    <result column="thirty_one_txt" property="thirty_one_txt" jdbcType="LONGVARCHAR" />
+    <result column="thirty_two_txt" property="thirty_two_txt" jdbcType="LONGVARCHAR" />
+    <result column="thirty_three_text" property="thirty_three_text" jdbcType="LONGVARCHAR" />
+    <result column="thirty_four_text" property="thirty_four_text" jdbcType="LONGVARCHAR" />
+    <result column="thirty_five_text" property="thirty_five_text" jdbcType="LONGVARCHAR" />
+    <result column="thirty_six_text" property="thirty_six_text" jdbcType="LONGVARCHAR" />
+    <result column="thirty_seven_text" property="thirty_seven_text" jdbcType="LONGVARCHAR" />
+    <result column="thirty_eight_text" property="thirty_eight_text" jdbcType="LONGVARCHAR" />
+    <result column="thirty_nine_text" property="thirty_nine_text" jdbcType="LONGVARCHAR" />
+    <result column="forty_text" property="forty_text" jdbcType="LONGVARCHAR" />
+    <result column="forty_one_txt" property="forty_one_txt" jdbcType="LONGVARCHAR" />
+    <result column="forty_two_txt" property="forty_two_txt" jdbcType="LONGVARCHAR" />
+    <result column="forty_three_text" property="forty_three_text" jdbcType="LONGVARCHAR" />
+    <result column="forty_four_text" property="forty_four_text" jdbcType="LONGVARCHAR" />
+    <result column="forty_five_text" property="forty_five_text" jdbcType="LONGVARCHAR" />
+    <result column="forty_six_text" property="forty_six_text" jdbcType="LONGVARCHAR" />
+    <result column="forty_seven_text" property="forty_seven_text" jdbcType="LONGVARCHAR" />
+    <result column="forty_eight_text" property="forty_eight_text" jdbcType="LONGVARCHAR" />
+    <result column="forty_nine_text" property="forty_nine_text" jdbcType="LONGVARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    order_id, create_time, total, one_sum, two_sum, three_sum, four_sum, five_sum, six_sum, 
+    seven_sum, eight_sum, nine_sum, ten_sum, eleven_sum, twelve_sum, thirteen_sum, fourtee_sum, 
+    fifteen_sum, sixteen_sum, seventeen_sum, eighteen_sum, nineteen_sum, tweenty_sum, 
+    tweenty_one_sum, twenty_two_sum, twenty_three_sum, twenty_four_sum, twenty_five_sum, 
+    twenty_six_sum, twenty_seven_sum, twenty_eight_sum, twenty_nine_sum, thirty_sum, 
+    thirty_one_sum, thirty_two_sum, thirty_three_sum, thirty_four_sum, thirty_five_sum, 
+    thirty_six_sum, thirty_seven_sum, thirty_eight_sum, thirty_nine_sum, forty_sum, forty_one_sum, 
+    forty_two_sum, forty_three_sum, forty_four_sum, forty_five_sum, forty_six_sum, forty_seven_sum, 
+    forty_eight_sum, forty_nine_sum
+  </sql>
+  <sql id="Blob_Column_List" >
+    one_txt, two_txt, three_txt, four_txt, five_txt, six_txt, seven_txt, eight_txt, nine_txt, 
+    ten_txt, eleven_txt, twelve_txt, thirteen_txt, fourteen_txt, fifteen_txt, sixteen_txt, 
+    seventeen_txt, eighteen_txt, nineteen_txt, twenty_txt, tweenty_one_txt, twenty_two_txt, 
+    twenty_three_text, twenty_four_text, twenty_five_text, twenty_six_text, twenty_seven_text, 
+    twenty_eight_text, twenty_nine_text, thirty_text, thirty_one_txt, thirty_two_txt, 
+    thirty_three_text, thirty_four_text, thirty_five_text, thirty_six_text, thirty_seven_text, 
+    thirty_eight_text, thirty_nine_text, forty_text, forty_one_txt, forty_two_txt, forty_three_text, 
+    forty_four_text, forty_five_text, forty_six_text, forty_seven_text, forty_eight_text, 
+    forty_nine_text
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="ResultMapWithBLOBs" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from number_page
+    where order_id = #{order_id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from number_page
+    where order_id = #{order_id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.antteam.bean.NumberPageBeanWithBLOBs" >
+    insert into number_page (order_id, create_time, total, 
+      one_sum, two_sum, three_sum, 
+      four_sum, five_sum, six_sum, 
+      seven_sum, eight_sum, nine_sum, 
+      ten_sum, eleven_sum, twelve_sum, 
+      thirteen_sum, fourtee_sum, fifteen_sum, 
+      sixteen_sum, seventeen_sum, eighteen_sum, 
+      nineteen_sum, tweenty_sum, tweenty_one_sum, 
+      twenty_two_sum, twenty_three_sum, twenty_four_sum, 
+      twenty_five_sum, twenty_six_sum, twenty_seven_sum, 
+      twenty_eight_sum, twenty_nine_sum, thirty_sum, 
+      thirty_one_sum, thirty_two_sum, thirty_three_sum, 
+      thirty_four_sum, thirty_five_sum, thirty_six_sum, 
+      thirty_seven_sum, thirty_eight_sum, thirty_nine_sum, 
+      forty_sum, forty_one_sum, forty_two_sum, 
+      forty_three_sum, forty_four_sum, forty_five_sum, 
+      forty_six_sum, forty_seven_sum, forty_eight_sum, 
+      forty_nine_sum, one_txt, two_txt, 
+      three_txt, four_txt, five_txt, 
+      six_txt, seven_txt, eight_txt, 
+      nine_txt, ten_txt, eleven_txt, 
+      twelve_txt, thirteen_txt, fourteen_txt, 
+      fifteen_txt, sixteen_txt, seventeen_txt, 
+      eighteen_txt, nineteen_txt, twenty_txt, 
+      tweenty_one_txt, twenty_two_txt, 
+      twenty_three_text, twenty_four_text, 
+      twenty_five_text, twenty_six_text, 
+      twenty_seven_text, twenty_eight_text, 
+      twenty_nine_text, thirty_text, 
+      thirty_one_txt, thirty_two_txt, 
+      thirty_three_text, thirty_four_text, 
+      thirty_five_text, thirty_six_text, 
+      thirty_seven_text, thirty_eight_text, 
+      thirty_nine_text, forty_text, forty_one_txt, 
+      forty_two_txt, forty_three_text, 
+      forty_four_text, forty_five_text, 
+      forty_six_text, forty_seven_text, 
+      forty_eight_text, forty_nine_text
+      )
+    values (#{order_id,jdbcType=BIGINT}, #{create_time,jdbcType=DATE}, #{total,jdbcType=INTEGER}, 
+      #{one_sum,jdbcType=INTEGER}, #{two_sum,jdbcType=INTEGER}, #{three_sum,jdbcType=INTEGER}, 
+      #{four_sum,jdbcType=INTEGER}, #{five_sum,jdbcType=INTEGER}, #{six_sum,jdbcType=INTEGER}, 
+      #{seven_sum,jdbcType=INTEGER}, #{eight_sum,jdbcType=INTEGER}, #{nine_sum,jdbcType=INTEGER}, 
+      #{ten_sum,jdbcType=INTEGER}, #{eleven_sum,jdbcType=INTEGER}, #{twelve_sum,jdbcType=INTEGER}, 
+      #{thirteen_sum,jdbcType=INTEGER}, #{fourtee_sum,jdbcType=INTEGER}, #{fifteen_sum,jdbcType=INTEGER}, 
+      #{sixteen_sum,jdbcType=INTEGER}, #{seventeen_sum,jdbcType=INTEGER}, #{eighteen_sum,jdbcType=INTEGER}, 
+      #{nineteen_sum,jdbcType=INTEGER}, #{tweenty_sum,jdbcType=INTEGER}, #{tweenty_one_sum,jdbcType=INTEGER}, 
+      #{twenty_two_sum,jdbcType=INTEGER}, #{twenty_three_sum,jdbcType=INTEGER}, #{twenty_four_sum,jdbcType=INTEGER}, 
+      #{twenty_five_sum,jdbcType=INTEGER}, #{twenty_six_sum,jdbcType=INTEGER}, #{twenty_seven_sum,jdbcType=INTEGER}, 
+      #{twenty_eight_sum,jdbcType=INTEGER}, #{twenty_nine_sum,jdbcType=INTEGER}, #{thirty_sum,jdbcType=INTEGER}, 
+      #{thirty_one_sum,jdbcType=INTEGER}, #{thirty_two_sum,jdbcType=INTEGER}, #{thirty_three_sum,jdbcType=INTEGER}, 
+      #{thirty_four_sum,jdbcType=INTEGER}, #{thirty_five_sum,jdbcType=INTEGER}, #{thirty_six_sum,jdbcType=INTEGER}, 
+      #{thirty_seven_sum,jdbcType=INTEGER}, #{thirty_eight_sum,jdbcType=INTEGER}, #{thirty_nine_sum,jdbcType=INTEGER}, 
+      #{forty_sum,jdbcType=INTEGER}, #{forty_one_sum,jdbcType=INTEGER}, #{forty_two_sum,jdbcType=INTEGER}, 
+      #{forty_three_sum,jdbcType=INTEGER}, #{forty_four_sum,jdbcType=INTEGER}, #{forty_five_sum,jdbcType=INTEGER}, 
+      #{forty_six_sum,jdbcType=INTEGER}, #{forty_seven_sum,jdbcType=INTEGER}, #{forty_eight_sum,jdbcType=INTEGER}, 
+      #{forty_nine_sum,jdbcType=INTEGER}, #{one_txt,jdbcType=LONGVARCHAR}, #{two_txt,jdbcType=LONGVARCHAR}, 
+      #{three_txt,jdbcType=LONGVARCHAR}, #{four_txt,jdbcType=LONGVARCHAR}, #{five_txt,jdbcType=LONGVARCHAR}, 
+      #{six_txt,jdbcType=LONGVARCHAR}, #{seven_txt,jdbcType=LONGVARCHAR}, #{eight_txt,jdbcType=LONGVARCHAR}, 
+      #{nine_txt,jdbcType=LONGVARCHAR}, #{ten_txt,jdbcType=LONGVARCHAR}, #{eleven_txt,jdbcType=LONGVARCHAR}, 
+      #{twelve_txt,jdbcType=LONGVARCHAR}, #{thirteen_txt,jdbcType=LONGVARCHAR}, #{fourteen_txt,jdbcType=LONGVARCHAR}, 
+      #{fifteen_txt,jdbcType=LONGVARCHAR}, #{sixteen_txt,jdbcType=LONGVARCHAR}, #{seventeen_txt,jdbcType=LONGVARCHAR}, 
+      #{eighteen_txt,jdbcType=LONGVARCHAR}, #{nineteen_txt,jdbcType=LONGVARCHAR}, #{twenty_txt,jdbcType=LONGVARCHAR}, 
+      #{tweenty_one_txt,jdbcType=LONGVARCHAR}, #{twenty_two_txt,jdbcType=LONGVARCHAR}, 
+      #{twenty_three_text,jdbcType=LONGVARCHAR}, #{twenty_four_text,jdbcType=LONGVARCHAR}, 
+      #{twenty_five_text,jdbcType=LONGVARCHAR}, #{twenty_six_text,jdbcType=LONGVARCHAR}, 
+      #{twenty_seven_text,jdbcType=LONGVARCHAR}, #{twenty_eight_text,jdbcType=LONGVARCHAR}, 
+      #{twenty_nine_text,jdbcType=LONGVARCHAR}, #{thirty_text,jdbcType=LONGVARCHAR}, 
+      #{thirty_one_txt,jdbcType=LONGVARCHAR}, #{thirty_two_txt,jdbcType=LONGVARCHAR}, 
+      #{thirty_three_text,jdbcType=LONGVARCHAR}, #{thirty_four_text,jdbcType=LONGVARCHAR}, 
+      #{thirty_five_text,jdbcType=LONGVARCHAR}, #{thirty_six_text,jdbcType=LONGVARCHAR}, 
+      #{thirty_seven_text,jdbcType=LONGVARCHAR}, #{thirty_eight_text,jdbcType=LONGVARCHAR}, 
+      #{thirty_nine_text,jdbcType=LONGVARCHAR}, #{forty_text,jdbcType=LONGVARCHAR}, #{forty_one_txt,jdbcType=LONGVARCHAR}, 
+      #{forty_two_txt,jdbcType=LONGVARCHAR}, #{forty_three_text,jdbcType=LONGVARCHAR}, 
+      #{forty_four_text,jdbcType=LONGVARCHAR}, #{forty_five_text,jdbcType=LONGVARCHAR}, 
+      #{forty_six_text,jdbcType=LONGVARCHAR}, #{forty_seven_text,jdbcType=LONGVARCHAR}, 
+      #{forty_eight_text,jdbcType=LONGVARCHAR}, #{forty_nine_text,jdbcType=LONGVARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.antteam.bean.NumberPageBeanWithBLOBs" >
+    insert into number_page
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="order_id != null" >
+        order_id,
+      </if>
+      <if test="create_time != null" >
+        create_time,
+      </if>
+      <if test="total != null" >
+        total,
+      </if>
+      <if test="one_sum != null" >
+        one_sum,
+      </if>
+      <if test="two_sum != null" >
+        two_sum,
+      </if>
+      <if test="three_sum != null" >
+        three_sum,
+      </if>
+      <if test="four_sum != null" >
+        four_sum,
+      </if>
+      <if test="five_sum != null" >
+        five_sum,
+      </if>
+      <if test="six_sum != null" >
+        six_sum,
+      </if>
+      <if test="seven_sum != null" >
+        seven_sum,
+      </if>
+      <if test="eight_sum != null" >
+        eight_sum,
+      </if>
+      <if test="nine_sum != null" >
+        nine_sum,
+      </if>
+      <if test="ten_sum != null" >
+        ten_sum,
+      </if>
+      <if test="eleven_sum != null" >
+        eleven_sum,
+      </if>
+      <if test="twelve_sum != null" >
+        twelve_sum,
+      </if>
+      <if test="thirteen_sum != null" >
+        thirteen_sum,
+      </if>
+      <if test="fourtee_sum != null" >
+        fourtee_sum,
+      </if>
+      <if test="fifteen_sum != null" >
+        fifteen_sum,
+      </if>
+      <if test="sixteen_sum != null" >
+        sixteen_sum,
+      </if>
+      <if test="seventeen_sum != null" >
+        seventeen_sum,
+      </if>
+      <if test="eighteen_sum != null" >
+        eighteen_sum,
+      </if>
+      <if test="nineteen_sum != null" >
+        nineteen_sum,
+      </if>
+      <if test="tweenty_sum != null" >
+        tweenty_sum,
+      </if>
+      <if test="tweenty_one_sum != null" >
+        tweenty_one_sum,
+      </if>
+      <if test="twenty_two_sum != null" >
+        twenty_two_sum,
+      </if>
+      <if test="twenty_three_sum != null" >
+        twenty_three_sum,
+      </if>
+      <if test="twenty_four_sum != null" >
+        twenty_four_sum,
+      </if>
+      <if test="twenty_five_sum != null" >
+        twenty_five_sum,
+      </if>
+      <if test="twenty_six_sum != null" >
+        twenty_six_sum,
+      </if>
+      <if test="twenty_seven_sum != null" >
+        twenty_seven_sum,
+      </if>
+      <if test="twenty_eight_sum != null" >
+        twenty_eight_sum,
+      </if>
+      <if test="twenty_nine_sum != null" >
+        twenty_nine_sum,
+      </if>
+      <if test="thirty_sum != null" >
+        thirty_sum,
+      </if>
+      <if test="thirty_one_sum != null" >
+        thirty_one_sum,
+      </if>
+      <if test="thirty_two_sum != null" >
+        thirty_two_sum,
+      </if>
+      <if test="thirty_three_sum != null" >
+        thirty_three_sum,
+      </if>
+      <if test="thirty_four_sum != null" >
+        thirty_four_sum,
+      </if>
+      <if test="thirty_five_sum != null" >
+        thirty_five_sum,
+      </if>
+      <if test="thirty_six_sum != null" >
+        thirty_six_sum,
+      </if>
+      <if test="thirty_seven_sum != null" >
+        thirty_seven_sum,
+      </if>
+      <if test="thirty_eight_sum != null" >
+        thirty_eight_sum,
+      </if>
+      <if test="thirty_nine_sum != null" >
+        thirty_nine_sum,
+      </if>
+      <if test="forty_sum != null" >
+        forty_sum,
+      </if>
+      <if test="forty_one_sum != null" >
+        forty_one_sum,
+      </if>
+      <if test="forty_two_sum != null" >
+        forty_two_sum,
+      </if>
+      <if test="forty_three_sum != null" >
+        forty_three_sum,
+      </if>
+      <if test="forty_four_sum != null" >
+        forty_four_sum,
+      </if>
+      <if test="forty_five_sum != null" >
+        forty_five_sum,
+      </if>
+      <if test="forty_six_sum != null" >
+        forty_six_sum,
+      </if>
+      <if test="forty_seven_sum != null" >
+        forty_seven_sum,
+      </if>
+      <if test="forty_eight_sum != null" >
+        forty_eight_sum,
+      </if>
+      <if test="forty_nine_sum != null" >
+        forty_nine_sum,
+      </if>
+      <if test="one_txt != null" >
+        one_txt,
+      </if>
+      <if test="two_txt != null" >
+        two_txt,
+      </if>
+      <if test="three_txt != null" >
+        three_txt,
+      </if>
+      <if test="four_txt != null" >
+        four_txt,
+      </if>
+      <if test="five_txt != null" >
+        five_txt,
+      </if>
+      <if test="six_txt != null" >
+        six_txt,
+      </if>
+      <if test="seven_txt != null" >
+        seven_txt,
+      </if>
+      <if test="eight_txt != null" >
+        eight_txt,
+      </if>
+      <if test="nine_txt != null" >
+        nine_txt,
+      </if>
+      <if test="ten_txt != null" >
+        ten_txt,
+      </if>
+      <if test="eleven_txt != null" >
+        eleven_txt,
+      </if>
+      <if test="twelve_txt != null" >
+        twelve_txt,
+      </if>
+      <if test="thirteen_txt != null" >
+        thirteen_txt,
+      </if>
+      <if test="fourteen_txt != null" >
+        fourteen_txt,
+      </if>
+      <if test="fifteen_txt != null" >
+        fifteen_txt,
+      </if>
+      <if test="sixteen_txt != null" >
+        sixteen_txt,
+      </if>
+      <if test="seventeen_txt != null" >
+        seventeen_txt,
+      </if>
+      <if test="eighteen_txt != null" >
+        eighteen_txt,
+      </if>
+      <if test="nineteen_txt != null" >
+        nineteen_txt,
+      </if>
+      <if test="twenty_txt != null" >
+        twenty_txt,
+      </if>
+      <if test="tweenty_one_txt != null" >
+        tweenty_one_txt,
+      </if>
+      <if test="twenty_two_txt != null" >
+        twenty_two_txt,
+      </if>
+      <if test="twenty_three_text != null" >
+        twenty_three_text,
+      </if>
+      <if test="twenty_four_text != null" >
+        twenty_four_text,
+      </if>
+      <if test="twenty_five_text != null" >
+        twenty_five_text,
+      </if>
+      <if test="twenty_six_text != null" >
+        twenty_six_text,
+      </if>
+      <if test="twenty_seven_text != null" >
+        twenty_seven_text,
+      </if>
+      <if test="twenty_eight_text != null" >
+        twenty_eight_text,
+      </if>
+      <if test="twenty_nine_text != null" >
+        twenty_nine_text,
+      </if>
+      <if test="thirty_text != null" >
+        thirty_text,
+      </if>
+      <if test="thirty_one_txt != null" >
+        thirty_one_txt,
+      </if>
+      <if test="thirty_two_txt != null" >
+        thirty_two_txt,
+      </if>
+      <if test="thirty_three_text != null" >
+        thirty_three_text,
+      </if>
+      <if test="thirty_four_text != null" >
+        thirty_four_text,
+      </if>
+      <if test="thirty_five_text != null" >
+        thirty_five_text,
+      </if>
+      <if test="thirty_six_text != null" >
+        thirty_six_text,
+      </if>
+      <if test="thirty_seven_text != null" >
+        thirty_seven_text,
+      </if>
+      <if test="thirty_eight_text != null" >
+        thirty_eight_text,
+      </if>
+      <if test="thirty_nine_text != null" >
+        thirty_nine_text,
+      </if>
+      <if test="forty_text != null" >
+        forty_text,
+      </if>
+      <if test="forty_one_txt != null" >
+        forty_one_txt,
+      </if>
+      <if test="forty_two_txt != null" >
+        forty_two_txt,
+      </if>
+      <if test="forty_three_text != null" >
+        forty_three_text,
+      </if>
+      <if test="forty_four_text != null" >
+        forty_four_text,
+      </if>
+      <if test="forty_five_text != null" >
+        forty_five_text,
+      </if>
+      <if test="forty_six_text != null" >
+        forty_six_text,
+      </if>
+      <if test="forty_seven_text != null" >
+        forty_seven_text,
+      </if>
+      <if test="forty_eight_text != null" >
+        forty_eight_text,
+      </if>
+      <if test="forty_nine_text != null" >
+        forty_nine_text,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="order_id != null" >
+        #{order_id,jdbcType=BIGINT},
+      </if>
+      <if test="create_time != null" >
+        #{create_time,jdbcType=DATE},
+      </if>
+      <if test="total != null" >
+        #{total,jdbcType=INTEGER},
+      </if>
+      <if test="one_sum != null" >
+        #{one_sum,jdbcType=INTEGER},
+      </if>
+      <if test="two_sum != null" >
+        #{two_sum,jdbcType=INTEGER},
+      </if>
+      <if test="three_sum != null" >
+        #{three_sum,jdbcType=INTEGER},
+      </if>
+      <if test="four_sum != null" >
+        #{four_sum,jdbcType=INTEGER},
+      </if>
+      <if test="five_sum != null" >
+        #{five_sum,jdbcType=INTEGER},
+      </if>
+      <if test="six_sum != null" >
+        #{six_sum,jdbcType=INTEGER},
+      </if>
+      <if test="seven_sum != null" >
+        #{seven_sum,jdbcType=INTEGER},
+      </if>
+      <if test="eight_sum != null" >
+        #{eight_sum,jdbcType=INTEGER},
+      </if>
+      <if test="nine_sum != null" >
+        #{nine_sum,jdbcType=INTEGER},
+      </if>
+      <if test="ten_sum != null" >
+        #{ten_sum,jdbcType=INTEGER},
+      </if>
+      <if test="eleven_sum != null" >
+        #{eleven_sum,jdbcType=INTEGER},
+      </if>
+      <if test="twelve_sum != null" >
+        #{twelve_sum,jdbcType=INTEGER},
+      </if>
+      <if test="thirteen_sum != null" >
+        #{thirteen_sum,jdbcType=INTEGER},
+      </if>
+      <if test="fourtee_sum != null" >
+        #{fourtee_sum,jdbcType=INTEGER},
+      </if>
+      <if test="fifteen_sum != null" >
+        #{fifteen_sum,jdbcType=INTEGER},
+      </if>
+      <if test="sixteen_sum != null" >
+        #{sixteen_sum,jdbcType=INTEGER},
+      </if>
+      <if test="seventeen_sum != null" >
+        #{seventeen_sum,jdbcType=INTEGER},
+      </if>
+      <if test="eighteen_sum != null" >
+        #{eighteen_sum,jdbcType=INTEGER},
+      </if>
+      <if test="nineteen_sum != null" >
+        #{nineteen_sum,jdbcType=INTEGER},
+      </if>
+      <if test="tweenty_sum != null" >
+        #{tweenty_sum,jdbcType=INTEGER},
+      </if>
+      <if test="tweenty_one_sum != null" >
+        #{tweenty_one_sum,jdbcType=INTEGER},
+      </if>
+      <if test="twenty_two_sum != null" >
+        #{twenty_two_sum,jdbcType=INTEGER},
+      </if>
+      <if test="twenty_three_sum != null" >
+        #{twenty_three_sum,jdbcType=INTEGER},
+      </if>
+      <if test="twenty_four_sum != null" >
+        #{twenty_four_sum,jdbcType=INTEGER},
+      </if>
+      <if test="twenty_five_sum != null" >
+        #{twenty_five_sum,jdbcType=INTEGER},
+      </if>
+      <if test="twenty_six_sum != null" >
+        #{twenty_six_sum,jdbcType=INTEGER},
+      </if>
+      <if test="twenty_seven_sum != null" >
+        #{twenty_seven_sum,jdbcType=INTEGER},
+      </if>
+      <if test="twenty_eight_sum != null" >
+        #{twenty_eight_sum,jdbcType=INTEGER},
+      </if>
+      <if test="twenty_nine_sum != null" >
+        #{twenty_nine_sum,jdbcType=INTEGER},
+      </if>
+      <if test="thirty_sum != null" >
+        #{thirty_sum,jdbcType=INTEGER},
+      </if>
+      <if test="thirty_one_sum != null" >
+        #{thirty_one_sum,jdbcType=INTEGER},
+      </if>
+      <if test="thirty_two_sum != null" >
+        #{thirty_two_sum,jdbcType=INTEGER},
+      </if>
+      <if test="thirty_three_sum != null" >
+        #{thirty_three_sum,jdbcType=INTEGER},
+      </if>
+      <if test="thirty_four_sum != null" >
+        #{thirty_four_sum,jdbcType=INTEGER},
+      </if>
+      <if test="thirty_five_sum != null" >
+        #{thirty_five_sum,jdbcType=INTEGER},
+      </if>
+      <if test="thirty_six_sum != null" >
+        #{thirty_six_sum,jdbcType=INTEGER},
+      </if>
+      <if test="thirty_seven_sum != null" >
+        #{thirty_seven_sum,jdbcType=INTEGER},
+      </if>
+      <if test="thirty_eight_sum != null" >
+        #{thirty_eight_sum,jdbcType=INTEGER},
+      </if>
+      <if test="thirty_nine_sum != null" >
+        #{thirty_nine_sum,jdbcType=INTEGER},
+      </if>
+      <if test="forty_sum != null" >
+        #{forty_sum,jdbcType=INTEGER},
+      </if>
+      <if test="forty_one_sum != null" >
+        #{forty_one_sum,jdbcType=INTEGER},
+      </if>
+      <if test="forty_two_sum != null" >
+        #{forty_two_sum,jdbcType=INTEGER},
+      </if>
+      <if test="forty_three_sum != null" >
+        #{forty_three_sum,jdbcType=INTEGER},
+      </if>
+      <if test="forty_four_sum != null" >
+        #{forty_four_sum,jdbcType=INTEGER},
+      </if>
+      <if test="forty_five_sum != null" >
+        #{forty_five_sum,jdbcType=INTEGER},
+      </if>
+      <if test="forty_six_sum != null" >
+        #{forty_six_sum,jdbcType=INTEGER},
+      </if>
+      <if test="forty_seven_sum != null" >
+        #{forty_seven_sum,jdbcType=INTEGER},
+      </if>
+      <if test="forty_eight_sum != null" >
+        #{forty_eight_sum,jdbcType=INTEGER},
+      </if>
+      <if test="forty_nine_sum != null" >
+        #{forty_nine_sum,jdbcType=INTEGER},
+      </if>
+      <if test="one_txt != null" >
+        #{one_txt,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="two_txt != null" >
+        #{two_txt,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="three_txt != null" >
+        #{three_txt,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="four_txt != null" >
+        #{four_txt,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="five_txt != null" >
+        #{five_txt,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="six_txt != null" >
+        #{six_txt,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="seven_txt != null" >
+        #{seven_txt,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="eight_txt != null" >
+        #{eight_txt,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="nine_txt != null" >
+        #{nine_txt,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="ten_txt != null" >
+        #{ten_txt,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="eleven_txt != null" >
+        #{eleven_txt,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="twelve_txt != null" >
+        #{twelve_txt,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="thirteen_txt != null" >
+        #{thirteen_txt,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="fourteen_txt != null" >
+        #{fourteen_txt,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="fifteen_txt != null" >
+        #{fifteen_txt,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="sixteen_txt != null" >
+        #{sixteen_txt,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="seventeen_txt != null" >
+        #{seventeen_txt,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="eighteen_txt != null" >
+        #{eighteen_txt,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="nineteen_txt != null" >
+        #{nineteen_txt,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="twenty_txt != null" >
+        #{twenty_txt,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="tweenty_one_txt != null" >
+        #{tweenty_one_txt,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="twenty_two_txt != null" >
+        #{twenty_two_txt,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="twenty_three_text != null" >
+        #{twenty_three_text,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="twenty_four_text != null" >
+        #{twenty_four_text,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="twenty_five_text != null" >
+        #{twenty_five_text,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="twenty_six_text != null" >
+        #{twenty_six_text,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="twenty_seven_text != null" >
+        #{twenty_seven_text,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="twenty_eight_text != null" >
+        #{twenty_eight_text,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="twenty_nine_text != null" >
+        #{twenty_nine_text,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="thirty_text != null" >
+        #{thirty_text,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="thirty_one_txt != null" >
+        #{thirty_one_txt,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="thirty_two_txt != null" >
+        #{thirty_two_txt,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="thirty_three_text != null" >
+        #{thirty_three_text,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="thirty_four_text != null" >
+        #{thirty_four_text,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="thirty_five_text != null" >
+        #{thirty_five_text,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="thirty_six_text != null" >
+        #{thirty_six_text,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="thirty_seven_text != null" >
+        #{thirty_seven_text,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="thirty_eight_text != null" >
+        #{thirty_eight_text,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="thirty_nine_text != null" >
+        #{thirty_nine_text,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="forty_text != null" >
+        #{forty_text,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="forty_one_txt != null" >
+        #{forty_one_txt,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="forty_two_txt != null" >
+        #{forty_two_txt,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="forty_three_text != null" >
+        #{forty_three_text,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="forty_four_text != null" >
+        #{forty_four_text,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="forty_five_text != null" >
+        #{forty_five_text,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="forty_six_text != null" >
+        #{forty_six_text,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="forty_seven_text != null" >
+        #{forty_seven_text,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="forty_eight_text != null" >
+        #{forty_eight_text,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="forty_nine_text != null" >
+        #{forty_nine_text,jdbcType=LONGVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.antteam.bean.NumberPageBeanWithBLOBs" >
+    update number_page
+    <set >
+      <if test="create_time != null" >
+        create_time = #{create_time,jdbcType=DATE},
+      </if>
+      <if test="total != null" >
+        total = #{total,jdbcType=INTEGER},
+      </if>
+      <if test="one_sum != null" >
+        one_sum = #{one_sum,jdbcType=INTEGER},
+      </if>
+      <if test="two_sum != null" >
+        two_sum = #{two_sum,jdbcType=INTEGER},
+      </if>
+      <if test="three_sum != null" >
+        three_sum = #{three_sum,jdbcType=INTEGER},
+      </if>
+      <if test="four_sum != null" >
+        four_sum = #{four_sum,jdbcType=INTEGER},
+      </if>
+      <if test="five_sum != null" >
+        five_sum = #{five_sum,jdbcType=INTEGER},
+      </if>
+      <if test="six_sum != null" >
+        six_sum = #{six_sum,jdbcType=INTEGER},
+      </if>
+      <if test="seven_sum != null" >
+        seven_sum = #{seven_sum,jdbcType=INTEGER},
+      </if>
+      <if test="eight_sum != null" >
+        eight_sum = #{eight_sum,jdbcType=INTEGER},
+      </if>
+      <if test="nine_sum != null" >
+        nine_sum = #{nine_sum,jdbcType=INTEGER},
+      </if>
+      <if test="ten_sum != null" >
+        ten_sum = #{ten_sum,jdbcType=INTEGER},
+      </if>
+      <if test="eleven_sum != null" >
+        eleven_sum = #{eleven_sum,jdbcType=INTEGER},
+      </if>
+      <if test="twelve_sum != null" >
+        twelve_sum = #{twelve_sum,jdbcType=INTEGER},
+      </if>
+      <if test="thirteen_sum != null" >
+        thirteen_sum = #{thirteen_sum,jdbcType=INTEGER},
+      </if>
+      <if test="fourtee_sum != null" >
+        fourtee_sum = #{fourtee_sum,jdbcType=INTEGER},
+      </if>
+      <if test="fifteen_sum != null" >
+        fifteen_sum = #{fifteen_sum,jdbcType=INTEGER},
+      </if>
+      <if test="sixteen_sum != null" >
+        sixteen_sum = #{sixteen_sum,jdbcType=INTEGER},
+      </if>
+      <if test="seventeen_sum != null" >
+        seventeen_sum = #{seventeen_sum,jdbcType=INTEGER},
+      </if>
+      <if test="eighteen_sum != null" >
+        eighteen_sum = #{eighteen_sum,jdbcType=INTEGER},
+      </if>
+      <if test="nineteen_sum != null" >
+        nineteen_sum = #{nineteen_sum,jdbcType=INTEGER},
+      </if>
+      <if test="tweenty_sum != null" >
+        tweenty_sum = #{tweenty_sum,jdbcType=INTEGER},
+      </if>
+      <if test="tweenty_one_sum != null" >
+        tweenty_one_sum = #{tweenty_one_sum,jdbcType=INTEGER},
+      </if>
+      <if test="twenty_two_sum != null" >
+        twenty_two_sum = #{twenty_two_sum,jdbcType=INTEGER},
+      </if>
+      <if test="twenty_three_sum != null" >
+        twenty_three_sum = #{twenty_three_sum,jdbcType=INTEGER},
+      </if>
+      <if test="twenty_four_sum != null" >
+        twenty_four_sum = #{twenty_four_sum,jdbcType=INTEGER},
+      </if>
+      <if test="twenty_five_sum != null" >
+        twenty_five_sum = #{twenty_five_sum,jdbcType=INTEGER},
+      </if>
+      <if test="twenty_six_sum != null" >
+        twenty_six_sum = #{twenty_six_sum,jdbcType=INTEGER},
+      </if>
+      <if test="twenty_seven_sum != null" >
+        twenty_seven_sum = #{twenty_seven_sum,jdbcType=INTEGER},
+      </if>
+      <if test="twenty_eight_sum != null" >
+        twenty_eight_sum = #{twenty_eight_sum,jdbcType=INTEGER},
+      </if>
+      <if test="twenty_nine_sum != null" >
+        twenty_nine_sum = #{twenty_nine_sum,jdbcType=INTEGER},
+      </if>
+      <if test="thirty_sum != null" >
+        thirty_sum = #{thirty_sum,jdbcType=INTEGER},
+      </if>
+      <if test="thirty_one_sum != null" >
+        thirty_one_sum = #{thirty_one_sum,jdbcType=INTEGER},
+      </if>
+      <if test="thirty_two_sum != null" >
+        thirty_two_sum = #{thirty_two_sum,jdbcType=INTEGER},
+      </if>
+      <if test="thirty_three_sum != null" >
+        thirty_three_sum = #{thirty_three_sum,jdbcType=INTEGER},
+      </if>
+      <if test="thirty_four_sum != null" >
+        thirty_four_sum = #{thirty_four_sum,jdbcType=INTEGER},
+      </if>
+      <if test="thirty_five_sum != null" >
+        thirty_five_sum = #{thirty_five_sum,jdbcType=INTEGER},
+      </if>
+      <if test="thirty_six_sum != null" >
+        thirty_six_sum = #{thirty_six_sum,jdbcType=INTEGER},
+      </if>
+      <if test="thirty_seven_sum != null" >
+        thirty_seven_sum = #{thirty_seven_sum,jdbcType=INTEGER},
+      </if>
+      <if test="thirty_eight_sum != null" >
+        thirty_eight_sum = #{thirty_eight_sum,jdbcType=INTEGER},
+      </if>
+      <if test="thirty_nine_sum != null" >
+        thirty_nine_sum = #{thirty_nine_sum,jdbcType=INTEGER},
+      </if>
+      <if test="forty_sum != null" >
+        forty_sum = #{forty_sum,jdbcType=INTEGER},
+      </if>
+      <if test="forty_one_sum != null" >
+        forty_one_sum = #{forty_one_sum,jdbcType=INTEGER},
+      </if>
+      <if test="forty_two_sum != null" >
+        forty_two_sum = #{forty_two_sum,jdbcType=INTEGER},
+      </if>
+      <if test="forty_three_sum != null" >
+        forty_three_sum = #{forty_three_sum,jdbcType=INTEGER},
+      </if>
+      <if test="forty_four_sum != null" >
+        forty_four_sum = #{forty_four_sum,jdbcType=INTEGER},
+      </if>
+      <if test="forty_five_sum != null" >
+        forty_five_sum = #{forty_five_sum,jdbcType=INTEGER},
+      </if>
+      <if test="forty_six_sum != null" >
+        forty_six_sum = #{forty_six_sum,jdbcType=INTEGER},
+      </if>
+      <if test="forty_seven_sum != null" >
+        forty_seven_sum = #{forty_seven_sum,jdbcType=INTEGER},
+      </if>
+      <if test="forty_eight_sum != null" >
+        forty_eight_sum = #{forty_eight_sum,jdbcType=INTEGER},
+      </if>
+      <if test="forty_nine_sum != null" >
+        forty_nine_sum = #{forty_nine_sum,jdbcType=INTEGER},
+      </if>
+      <if test="one_txt != null" >
+        one_txt = #{one_txt,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="two_txt != null" >
+        two_txt = #{two_txt,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="three_txt != null" >
+        three_txt = #{three_txt,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="four_txt != null" >
+        four_txt = #{four_txt,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="five_txt != null" >
+        five_txt = #{five_txt,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="six_txt != null" >
+        six_txt = #{six_txt,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="seven_txt != null" >
+        seven_txt = #{seven_txt,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="eight_txt != null" >
+        eight_txt = #{eight_txt,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="nine_txt != null" >
+        nine_txt = #{nine_txt,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="ten_txt != null" >
+        ten_txt = #{ten_txt,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="eleven_txt != null" >
+        eleven_txt = #{eleven_txt,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="twelve_txt != null" >
+        twelve_txt = #{twelve_txt,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="thirteen_txt != null" >
+        thirteen_txt = #{thirteen_txt,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="fourteen_txt != null" >
+        fourteen_txt = #{fourteen_txt,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="fifteen_txt != null" >
+        fifteen_txt = #{fifteen_txt,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="sixteen_txt != null" >
+        sixteen_txt = #{sixteen_txt,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="seventeen_txt != null" >
+        seventeen_txt = #{seventeen_txt,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="eighteen_txt != null" >
+        eighteen_txt = #{eighteen_txt,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="nineteen_txt != null" >
+        nineteen_txt = #{nineteen_txt,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="twenty_txt != null" >
+        twenty_txt = #{twenty_txt,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="tweenty_one_txt != null" >
+        tweenty_one_txt = #{tweenty_one_txt,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="twenty_two_txt != null" >
+        twenty_two_txt = #{twenty_two_txt,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="twenty_three_text != null" >
+        twenty_three_text = #{twenty_three_text,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="twenty_four_text != null" >
+        twenty_four_text = #{twenty_four_text,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="twenty_five_text != null" >
+        twenty_five_text = #{twenty_five_text,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="twenty_six_text != null" >
+        twenty_six_text = #{twenty_six_text,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="twenty_seven_text != null" >
+        twenty_seven_text = #{twenty_seven_text,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="twenty_eight_text != null" >
+        twenty_eight_text = #{twenty_eight_text,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="twenty_nine_text != null" >
+        twenty_nine_text = #{twenty_nine_text,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="thirty_text != null" >
+        thirty_text = #{thirty_text,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="thirty_one_txt != null" >
+        thirty_one_txt = #{thirty_one_txt,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="thirty_two_txt != null" >
+        thirty_two_txt = #{thirty_two_txt,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="thirty_three_text != null" >
+        thirty_three_text = #{thirty_three_text,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="thirty_four_text != null" >
+        thirty_four_text = #{thirty_four_text,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="thirty_five_text != null" >
+        thirty_five_text = #{thirty_five_text,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="thirty_six_text != null" >
+        thirty_six_text = #{thirty_six_text,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="thirty_seven_text != null" >
+        thirty_seven_text = #{thirty_seven_text,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="thirty_eight_text != null" >
+        thirty_eight_text = #{thirty_eight_text,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="thirty_nine_text != null" >
+        thirty_nine_text = #{thirty_nine_text,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="forty_text != null" >
+        forty_text = #{forty_text,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="forty_one_txt != null" >
+        forty_one_txt = #{forty_one_txt,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="forty_two_txt != null" >
+        forty_two_txt = #{forty_two_txt,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="forty_three_text != null" >
+        forty_three_text = #{forty_three_text,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="forty_four_text != null" >
+        forty_four_text = #{forty_four_text,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="forty_five_text != null" >
+        forty_five_text = #{forty_five_text,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="forty_six_text != null" >
+        forty_six_text = #{forty_six_text,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="forty_seven_text != null" >
+        forty_seven_text = #{forty_seven_text,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="forty_eight_text != null" >
+        forty_eight_text = #{forty_eight_text,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="forty_nine_text != null" >
+        forty_nine_text = #{forty_nine_text,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where order_id = #{order_id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.antteam.bean.NumberPageBeanWithBLOBs" >
+    update number_page
+    set create_time = #{create_time,jdbcType=DATE},
+      total = #{total,jdbcType=INTEGER},
+      one_sum = #{one_sum,jdbcType=INTEGER},
+      two_sum = #{two_sum,jdbcType=INTEGER},
+      three_sum = #{three_sum,jdbcType=INTEGER},
+      four_sum = #{four_sum,jdbcType=INTEGER},
+      five_sum = #{five_sum,jdbcType=INTEGER},
+      six_sum = #{six_sum,jdbcType=INTEGER},
+      seven_sum = #{seven_sum,jdbcType=INTEGER},
+      eight_sum = #{eight_sum,jdbcType=INTEGER},
+      nine_sum = #{nine_sum,jdbcType=INTEGER},
+      ten_sum = #{ten_sum,jdbcType=INTEGER},
+      eleven_sum = #{eleven_sum,jdbcType=INTEGER},
+      twelve_sum = #{twelve_sum,jdbcType=INTEGER},
+      thirteen_sum = #{thirteen_sum,jdbcType=INTEGER},
+      fourtee_sum = #{fourtee_sum,jdbcType=INTEGER},
+      fifteen_sum = #{fifteen_sum,jdbcType=INTEGER},
+      sixteen_sum = #{sixteen_sum,jdbcType=INTEGER},
+      seventeen_sum = #{seventeen_sum,jdbcType=INTEGER},
+      eighteen_sum = #{eighteen_sum,jdbcType=INTEGER},
+      nineteen_sum = #{nineteen_sum,jdbcType=INTEGER},
+      tweenty_sum = #{tweenty_sum,jdbcType=INTEGER},
+      tweenty_one_sum = #{tweenty_one_sum,jdbcType=INTEGER},
+      twenty_two_sum = #{twenty_two_sum,jdbcType=INTEGER},
+      twenty_three_sum = #{twenty_three_sum,jdbcType=INTEGER},
+      twenty_four_sum = #{twenty_four_sum,jdbcType=INTEGER},
+      twenty_five_sum = #{twenty_five_sum,jdbcType=INTEGER},
+      twenty_six_sum = #{twenty_six_sum,jdbcType=INTEGER},
+      twenty_seven_sum = #{twenty_seven_sum,jdbcType=INTEGER},
+      twenty_eight_sum = #{twenty_eight_sum,jdbcType=INTEGER},
+      twenty_nine_sum = #{twenty_nine_sum,jdbcType=INTEGER},
+      thirty_sum = #{thirty_sum,jdbcType=INTEGER},
+      thirty_one_sum = #{thirty_one_sum,jdbcType=INTEGER},
+      thirty_two_sum = #{thirty_two_sum,jdbcType=INTEGER},
+      thirty_three_sum = #{thirty_three_sum,jdbcType=INTEGER},
+      thirty_four_sum = #{thirty_four_sum,jdbcType=INTEGER},
+      thirty_five_sum = #{thirty_five_sum,jdbcType=INTEGER},
+      thirty_six_sum = #{thirty_six_sum,jdbcType=INTEGER},
+      thirty_seven_sum = #{thirty_seven_sum,jdbcType=INTEGER},
+      thirty_eight_sum = #{thirty_eight_sum,jdbcType=INTEGER},
+      thirty_nine_sum = #{thirty_nine_sum,jdbcType=INTEGER},
+      forty_sum = #{forty_sum,jdbcType=INTEGER},
+      forty_one_sum = #{forty_one_sum,jdbcType=INTEGER},
+      forty_two_sum = #{forty_two_sum,jdbcType=INTEGER},
+      forty_three_sum = #{forty_three_sum,jdbcType=INTEGER},
+      forty_four_sum = #{forty_four_sum,jdbcType=INTEGER},
+      forty_five_sum = #{forty_five_sum,jdbcType=INTEGER},
+      forty_six_sum = #{forty_six_sum,jdbcType=INTEGER},
+      forty_seven_sum = #{forty_seven_sum,jdbcType=INTEGER},
+      forty_eight_sum = #{forty_eight_sum,jdbcType=INTEGER},
+      forty_nine_sum = #{forty_nine_sum,jdbcType=INTEGER},
+      one_txt = #{one_txt,jdbcType=LONGVARCHAR},
+      two_txt = #{two_txt,jdbcType=LONGVARCHAR},
+      three_txt = #{three_txt,jdbcType=LONGVARCHAR},
+      four_txt = #{four_txt,jdbcType=LONGVARCHAR},
+      five_txt = #{five_txt,jdbcType=LONGVARCHAR},
+      six_txt = #{six_txt,jdbcType=LONGVARCHAR},
+      seven_txt = #{seven_txt,jdbcType=LONGVARCHAR},
+      eight_txt = #{eight_txt,jdbcType=LONGVARCHAR},
+      nine_txt = #{nine_txt,jdbcType=LONGVARCHAR},
+      ten_txt = #{ten_txt,jdbcType=LONGVARCHAR},
+      eleven_txt = #{eleven_txt,jdbcType=LONGVARCHAR},
+      twelve_txt = #{twelve_txt,jdbcType=LONGVARCHAR},
+      thirteen_txt = #{thirteen_txt,jdbcType=LONGVARCHAR},
+      fourteen_txt = #{fourteen_txt,jdbcType=LONGVARCHAR},
+      fifteen_txt = #{fifteen_txt,jdbcType=LONGVARCHAR},
+      sixteen_txt = #{sixteen_txt,jdbcType=LONGVARCHAR},
+      seventeen_txt = #{seventeen_txt,jdbcType=LONGVARCHAR},
+      eighteen_txt = #{eighteen_txt,jdbcType=LONGVARCHAR},
+      nineteen_txt = #{nineteen_txt,jdbcType=LONGVARCHAR},
+      twenty_txt = #{twenty_txt,jdbcType=LONGVARCHAR},
+      tweenty_one_txt = #{tweenty_one_txt,jdbcType=LONGVARCHAR},
+      twenty_two_txt = #{twenty_two_txt,jdbcType=LONGVARCHAR},
+      twenty_three_text = #{twenty_three_text,jdbcType=LONGVARCHAR},
+      twenty_four_text = #{twenty_four_text,jdbcType=LONGVARCHAR},
+      twenty_five_text = #{twenty_five_text,jdbcType=LONGVARCHAR},
+      twenty_six_text = #{twenty_six_text,jdbcType=LONGVARCHAR},
+      twenty_seven_text = #{twenty_seven_text,jdbcType=LONGVARCHAR},
+      twenty_eight_text = #{twenty_eight_text,jdbcType=LONGVARCHAR},
+      twenty_nine_text = #{twenty_nine_text,jdbcType=LONGVARCHAR},
+      thirty_text = #{thirty_text,jdbcType=LONGVARCHAR},
+      thirty_one_txt = #{thirty_one_txt,jdbcType=LONGVARCHAR},
+      thirty_two_txt = #{thirty_two_txt,jdbcType=LONGVARCHAR},
+      thirty_three_text = #{thirty_three_text,jdbcType=LONGVARCHAR},
+      thirty_four_text = #{thirty_four_text,jdbcType=LONGVARCHAR},
+      thirty_five_text = #{thirty_five_text,jdbcType=LONGVARCHAR},
+      thirty_six_text = #{thirty_six_text,jdbcType=LONGVARCHAR},
+      thirty_seven_text = #{thirty_seven_text,jdbcType=LONGVARCHAR},
+      thirty_eight_text = #{thirty_eight_text,jdbcType=LONGVARCHAR},
+      thirty_nine_text = #{thirty_nine_text,jdbcType=LONGVARCHAR},
+      forty_text = #{forty_text,jdbcType=LONGVARCHAR},
+      forty_one_txt = #{forty_one_txt,jdbcType=LONGVARCHAR},
+      forty_two_txt = #{forty_two_txt,jdbcType=LONGVARCHAR},
+      forty_three_text = #{forty_three_text,jdbcType=LONGVARCHAR},
+      forty_four_text = #{forty_four_text,jdbcType=LONGVARCHAR},
+      forty_five_text = #{forty_five_text,jdbcType=LONGVARCHAR},
+      forty_six_text = #{forty_six_text,jdbcType=LONGVARCHAR},
+      forty_seven_text = #{forty_seven_text,jdbcType=LONGVARCHAR},
+      forty_eight_text = #{forty_eight_text,jdbcType=LONGVARCHAR},
+      forty_nine_text = #{forty_nine_text,jdbcType=LONGVARCHAR}
+    where order_id = #{order_id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.antteam.bean.NumberPageBean" >
+    update number_page
+    set create_time = #{create_time,jdbcType=DATE},
+      total = #{total,jdbcType=INTEGER},
+      one_sum = #{one_sum,jdbcType=INTEGER},
+      two_sum = #{two_sum,jdbcType=INTEGER},
+      three_sum = #{three_sum,jdbcType=INTEGER},
+      four_sum = #{four_sum,jdbcType=INTEGER},
+      five_sum = #{five_sum,jdbcType=INTEGER},
+      six_sum = #{six_sum,jdbcType=INTEGER},
+      seven_sum = #{seven_sum,jdbcType=INTEGER},
+      eight_sum = #{eight_sum,jdbcType=INTEGER},
+      nine_sum = #{nine_sum,jdbcType=INTEGER},
+      ten_sum = #{ten_sum,jdbcType=INTEGER},
+      eleven_sum = #{eleven_sum,jdbcType=INTEGER},
+      twelve_sum = #{twelve_sum,jdbcType=INTEGER},
+      thirteen_sum = #{thirteen_sum,jdbcType=INTEGER},
+      fourtee_sum = #{fourtee_sum,jdbcType=INTEGER},
+      fifteen_sum = #{fifteen_sum,jdbcType=INTEGER},
+      sixteen_sum = #{sixteen_sum,jdbcType=INTEGER},
+      seventeen_sum = #{seventeen_sum,jdbcType=INTEGER},
+      eighteen_sum = #{eighteen_sum,jdbcType=INTEGER},
+      nineteen_sum = #{nineteen_sum,jdbcType=INTEGER},
+      tweenty_sum = #{tweenty_sum,jdbcType=INTEGER},
+      tweenty_one_sum = #{tweenty_one_sum,jdbcType=INTEGER},
+      twenty_two_sum = #{twenty_two_sum,jdbcType=INTEGER},
+      twenty_three_sum = #{twenty_three_sum,jdbcType=INTEGER},
+      twenty_four_sum = #{twenty_four_sum,jdbcType=INTEGER},
+      twenty_five_sum = #{twenty_five_sum,jdbcType=INTEGER},
+      twenty_six_sum = #{twenty_six_sum,jdbcType=INTEGER},
+      twenty_seven_sum = #{twenty_seven_sum,jdbcType=INTEGER},
+      twenty_eight_sum = #{twenty_eight_sum,jdbcType=INTEGER},
+      twenty_nine_sum = #{twenty_nine_sum,jdbcType=INTEGER},
+      thirty_sum = #{thirty_sum,jdbcType=INTEGER},
+      thirty_one_sum = #{thirty_one_sum,jdbcType=INTEGER},
+      thirty_two_sum = #{thirty_two_sum,jdbcType=INTEGER},
+      thirty_three_sum = #{thirty_three_sum,jdbcType=INTEGER},
+      thirty_four_sum = #{thirty_four_sum,jdbcType=INTEGER},
+      thirty_five_sum = #{thirty_five_sum,jdbcType=INTEGER},
+      thirty_six_sum = #{thirty_six_sum,jdbcType=INTEGER},
+      thirty_seven_sum = #{thirty_seven_sum,jdbcType=INTEGER},
+      thirty_eight_sum = #{thirty_eight_sum,jdbcType=INTEGER},
+      thirty_nine_sum = #{thirty_nine_sum,jdbcType=INTEGER},
+      forty_sum = #{forty_sum,jdbcType=INTEGER},
+      forty_one_sum = #{forty_one_sum,jdbcType=INTEGER},
+      forty_two_sum = #{forty_two_sum,jdbcType=INTEGER},
+      forty_three_sum = #{forty_three_sum,jdbcType=INTEGER},
+      forty_four_sum = #{forty_four_sum,jdbcType=INTEGER},
+      forty_five_sum = #{forty_five_sum,jdbcType=INTEGER},
+      forty_six_sum = #{forty_six_sum,jdbcType=INTEGER},
+      forty_seven_sum = #{forty_seven_sum,jdbcType=INTEGER},
+      forty_eight_sum = #{forty_eight_sum,jdbcType=INTEGER},
+      forty_nine_sum = #{forty_nine_sum,jdbcType=INTEGER}
+    where order_id = #{order_id,jdbcType=BIGINT}
+  </update>
+</mapper>
